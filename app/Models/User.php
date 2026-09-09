@@ -8,6 +8,8 @@ use Illuminate\Notifications\Notifiable;
 use Spatie\Permission\Traits\HasRoles;
 use Uspdev\SenhaunicaSocialite\Traits\HasSenhaunica;
 
+
+
 class User extends Authenticatable
 {
     use HasFactory;
@@ -16,6 +18,8 @@ class User extends Authenticatable
     use HasSenhaunica;
     use \Spatie\Permission\Traits\HasRoles;
     use \Uspdev\SenhaunicaSocialite\Traits\HasSenhaunica;
+
+    public static $appNs;
 
     protected $guard_name = 'senhaunica';
 
